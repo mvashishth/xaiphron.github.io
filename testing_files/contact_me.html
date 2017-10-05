@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>Mayur Vashishth</title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+<link rel="icon" href="assets/storm.gif" type="image/gif" >
+<meta name=viewport content="width=device-width, initial-scale=1, height=device-height">
+<style>
+div.scroll{
+  padding:100vh;
+}
+body{
+	    background-repeat: no-repeat;
+    background-attachment: fixed;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: 'Ubuntu';
+margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url("assets/bg.jpg");
+}
+
+div.contact_me{
+  text-align: center;
+  padding: 35vh 0vw;
+}
+ul.contact_me {
+  list-style-type: none;
+  margin: 0;
+  padding: 0vh 0vw;
+  text-align: center;
+ 
+}
+
+li.contact_me {
+  font-size: 2vw;
+  font-family: 'Ubuntu';
+  display: inline-block;
+   padding:0vh 10vw;
+   margin:0vh 3vw;
+   vw;  
+  text-align: center;
+  
+  
+
+}
+
+a.contact_me{
+ 
+  color: white;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+img
+.contact{
+  width: 30vw;
+  height: auto;
+  display: inline-block;
+  
+
+}
+.contact:hover{
+	transition: all 0.3s ease-in-out 0s;
+	transform: scale(1.25);
+}
+h6.navigation {
+    visibility: hidden;
+      text-align: center;
+      font-size: 0.001vh;
+
+}
+
+</style>
+</head>
+<body>
+<h6 class="navigation"><a id="contact_me">contact</h6>
+<div class="contact_me">
+<ul>
+<li class="contact_me"><a class="contact_me"><img src="assets/fb.png" class="contact"></a><br/><br/>Facebook</li>
+<li class="contact_me"><a class="contact_me"><img src="assets/linkedin.png" class="contact"></a><br/><br/>LinkedIn</li>
+<li class="contact_me"><a class="contact_me"><img src="assets/github.png" class="contact"></a><br/><br/>Github</li>
+</ul>
+</div>
+</body>
+</html>
+

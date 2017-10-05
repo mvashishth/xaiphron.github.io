@@ -228,6 +228,115 @@ h6.navigation {
       font-size: 0.001vh;
 
 }
+div.contact_me{
+  text-align: center;
+  padding: 35vh 0vw;
+}
+ul.contact_me {
+  list-style-type: none;
+  margin: 0;
+  padding: 0vh 0vw;
+  text-align: center;
+ 
+}
+
+li.contact_me {
+  font-size: 2vw;
+  font-family: 'Ubuntu';
+  display: inline-block;
+   padding:0vh 2.5vw;
+   margin:0vh 3vw;
+   vw;  
+  text-align: center;
+  
+  
+
+}
+
+a.contact_me{
+ 
+  color: white;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+img
+.contact{
+  width: 30vw;
+  height: auto;
+  display: inline-block;
+  
+
+}
+.contact:hover{
+	transition: all 0.3s ease-in-out 0s;
+	transform: scale(1.25);
+}
+.modalDialog {
+  text-align: center;
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+
+
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background-image: url("assets/form_bg.jpg");
+  background-size: cover;
+}
+
+
+
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+textarea {
+    resize: none;
+    
+}
+input[type=submit]{
+    font-family: 'Ubuntu';
+}
 </style>
 </head>
 <body>
@@ -236,7 +345,7 @@ h6.navigation {
   <li class="about"><a href="#about_me" class="about">ABOUT ME</a></li>
   <li class="about"><a href="#hobbies" class="about">HOBBIES</a></li>
   <li class="about"><a href="#skills" class="about">SKILLS</a></li>
-  <li class="about"><a  href="under_c.html" class="about">CONTACT ME</a></li>
+  <li class="about"><a  href="#contact_me" class="about">CONTACT ME</a></li>
 </ul>
 <h6 class="navigation"><a id="about_me">Hobbies</h6>
 </div>
@@ -257,7 +366,7 @@ panel to know more about me.
 <br/>
 </ul>
 </div>
-<h6 class="navigation"><a id="skills">Hobbies</h6>
+<h6 class="navigation"><a id="skills">skills</h6>
 
 <div class="skills">
 <ul class="skills">
@@ -268,6 +377,31 @@ panel to know more about me.
 <li class="skills"><a class="skills"><img src="assets/illustrator.png" class="skill"></a><br/><br/>Illustrator</li>
 <li class="skills"><a class="skills"><img src="assets/inkscape.png" class="skill"></a><br/><br/>Inkscape</li>
 </ul>
+</div>
+
+<h6 class="navigation"><a id="contact_me">contact</h6>
+<div class="contact_me">
+<ul>
+<li class="contact_me"><a href="https://www.facebook.com/profile.php?id=100007871329247" target="_blank" class="contact_me"><img src="assets/fb.png" class="contact"></a><br/><br/>Facebook</li>
+<li class="contact_me"><a href="https://www.linkedin.com/in/mayur-vashishth-40ab5110a/" target="_blank" class="contact_me"><img src="assets/linkedin.png" class="contact"></a><br/><br/>LinkedIn</li>
+<li class="contact_me"><a href="https://github.com/xaiphron" target="_blank" class="contact_me"><img src="assets/github.png" class="contact"></a><br/><br/>Github</li>
+<li class="contact_me"><a href="#openModal" class="contact_me"><img src="assets/email.png" class="contact"></a><br/><br/>Email</li>
+</ul>
+<div id="openModal" class="modalDialog">
+  <div>
+    <a href="#contact_me" title="Close" class="close">X</a>
+    <form method="POST" action="http://formspree.io/vashishthmayur@gmail.com">
+    <p>
+  <textarea rows="1" cols="50" name="email" placeholder="Your email" type="email"></textarea></p>
+  <p>
+  <textarea rows="10" cols="50" name="message" placeholder="Your message"></textarea>
+  </p>
+  <p>
+  <button type="submit">Send</button>
+  </p>
+</form>
+  </div>
+</div>
 </div>
 </body>
 </html>
