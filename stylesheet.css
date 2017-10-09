@@ -273,6 +273,25 @@ img
   background-size: cover;
 }
 
+@media only screen and (max-width:720px) {
+  div.pg1{
+  text-align: center;
+}
+  ul.about {
+  position:fixed;
+  z-index: 9999;
+  list-style-type: none;
+  left:5vw;
+  right:5vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity:0.9;
+}
+  li.about{
+  font-size: 12px;
+}
+}
 
 
 .close {
