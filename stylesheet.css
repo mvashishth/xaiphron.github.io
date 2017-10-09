@@ -341,6 +341,13 @@ img.ho{
   height:auto;
   padding:1%;
 }
+.ho:hover{
+  transition: all 0.0s ease-in-out 0s;
+  transform: scale(1.0);
+  
+
+
+}
 li.hob {
   font-size: 80%;
   padding: 1.5%;
