@@ -24,8 +24,7 @@ div.pg1{
   padding-top: 15vh;
   margin-right: auto; margin-left: auto;
   text-align:center;
-  width: 100vw;
-    width: 46.875vw;
+  width: 46.875vw;
 
 }
 
@@ -83,8 +82,8 @@ li.about:hover{
 
 img.about {
   resize: both;
-  width: auto;
-  height: 2vw;
+  width: 40%;
+  height: auto;
 }
 
 div.hobbiesd{
@@ -273,25 +272,7 @@ img
   background-size: cover;
 }
 
-@media only screen and (max-width:720px) {
-  div.pg1{
-  text-align: center;
-}
-  ul.about {
-  position:fixed;
-  z-index: 9999;
-  list-style-type: none;
-  left:0vw;
-  right:0vw;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  opacity:0.9;
-}
-  li.about{
-  font-size: 12px;
-}
-}
+
 
 
 .close {
@@ -321,4 +302,35 @@ textarea {
 }
 input[type=submit]{
     font-family: 'Ubuntu';
+}
+@media only screen and (max-width:720px) {
+  div.pg1{
+  text-align: center;
+  width: auto;
+}
+.image_pg1_intro{
+	width: 95vw;
+}
+  ul.about {
+  position:fixed;
+  z-index: 9999;
+  list-style-type: none;
+  left:0vw;
+  right:0vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity:0.9;
+}
+  li.about{
+  font-size: 12px;
+}
+p.intro{
+  font-size: 2.90vh;
+  }
+
+img.about {
+  width: 50%;
+  height: auto;
+}
 }
