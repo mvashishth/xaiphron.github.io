@@ -21,7 +21,7 @@ div.pg1{
 
 .image_pg1_intro{
   position:relative;
-  padding-top: 15vh;
+  padding-top: 10vh;
   margin-right: auto; margin-left: auto;
   text-align:center;
   width: 46.875vw;
@@ -29,7 +29,7 @@ div.pg1{
 }
 
 p.intro{
-  font-size: 1.65vw;
+  font-size: 1.80vw;
   padding:2vh;
   text-align: justify;
   text-justify: inter-word;
