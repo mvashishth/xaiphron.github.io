@@ -281,8 +281,8 @@ img
   position:fixed;
   z-index: 9999;
   list-style-type: none;
-  left:5vw;
-  right:5vw;
+  left:0vw;
+  right:0vw;
   margin: 0;
   padding: 0;
   overflow: hidden;
